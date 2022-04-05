@@ -35,3 +35,5 @@ Route::put('/usuario/actualizar', 'App\Http\Controllers\UsuarioController@update
 Route::put('/usuario/desactivar', 'App\Http\Controllers\UsuarioController@desactivar');
 Route::put('/usuario/activar', 'App\Http\Controllers\UsuarioController@activar');
 Route::get('/rol/selectRol', 'App\Http\Controllers\UsuarioController@selectRol');
+
+Route::get('/factura', 'App\Http\Controllers\FacturaController@index');

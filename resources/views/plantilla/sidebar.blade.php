@@ -14,6 +14,7 @@
                         <a class="nav-link" href="#" @click="menu=1">Producto</a>
                         <a class="nav-link" href="#" @click="menu=2">Proveedor</a>
                         <a class="nav-link" href="#" @click="menu=3">Usuario</a>
+                        <a class="nav-link" href="#" @click="menu=4">Factura</a>
                     </nav>
                 </div>
             </div>

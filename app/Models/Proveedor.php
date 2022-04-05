@@ -11,4 +11,9 @@ class Proveedor extends Model
     protected $table = 'proveedores';
 
     protected $fillable=['nombre','contacto','telefono','condicion'];
+
+    public function facturas()
+    {
+        return $this->hasMany('App\Models\Factura');
+    }
 }

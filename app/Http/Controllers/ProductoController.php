@@ -20,6 +20,7 @@ class ProductoController extends Controller
         $precios=DB::table('precios')
         ->select('idproducto','precio')
         ->where('condicion','=',1);
+        //Se hace la subquery porque un producto puede estar sin precio y tambien un producto puede tener varios precio pero solo uno activo
         if ($buscar==''){
             $productos=DB::table('productos')
             ->select('productos.id','productos.nombre','productos.cantidad','productos.condicion','precios.precio as precio_precio')

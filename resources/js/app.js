@@ -7,10 +7,12 @@ import Vue from 'vue'
 import Producto from './components/Producto.vue';
 import Proveedor from './components/Proveedor.vue';
 import Usuario from './components/Usuario.vue';
+import Factura from './components/Factura.vue';
 
 Vue.component('producto', Producto);
 Vue.component('proveedor', Proveedor);
 Vue.component('usuario', Usuario);
+Vue.component('factura', Factura);
 
 const app = new Vue({
     el: '#app',

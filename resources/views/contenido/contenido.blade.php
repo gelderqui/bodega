@@ -10,4 +10,7 @@
     <template v-if="menu==3">
     <usuario :ruta="ruta"></usuario>
     </template>
+    <template v-if="menu==4">
+    <factura :ruta="ruta"></factrua>
+    </template>
 @endsection

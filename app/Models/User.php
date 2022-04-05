@@ -43,4 +43,8 @@ class User extends Authenticatable
     public function rol(){
         return $this->belongsTo('App\Models\Rol');
     }
+    public function facturas()
+    {
+        return $this->hasMany('App\Models\Factura');
+    }
 }
