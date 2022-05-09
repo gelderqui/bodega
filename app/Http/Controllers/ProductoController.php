@@ -111,4 +111,16 @@ class ProductoController extends Controller
         $producto->condicion = '1';
         $producto->save();
     }
+
+    public function selectProducto(Request $request){
+        //if (!$request->ajax()) return redirect('/');
+
+        $filtro = $request->filtro;
+        $productos = Producto::where('nombre', 'like', '%'. $filtro . '%')
+        ->where('condicion',1)
+        ->select('id','nombre')
+        ->orderBy('nombre', 'asc')->get();
+
+        return ['productos' => $productos];
+    }
 }

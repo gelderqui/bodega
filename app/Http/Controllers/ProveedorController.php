@@ -63,4 +63,16 @@ class ProveedorController extends Controller
         $proveedor->condicion = '1';
         $proveedor->save();
     }
+
+    public function selectProveedor(Request $request){
+        //if (!$request->ajax()) return redirect('/');
+
+        $filtro = $request->filtro;
+        $proveedores = Proveedor::where('nombre', 'like', '%'. $filtro . '%')
+        ->orWhere('contacto', 'like', '%'. $filtro . '%')
+        ->select('id','nombre','contacto')
+        ->orderBy('nombre', 'asc')->get();
+
+        return ['proveedores' => $proveedores];
+    }
 }

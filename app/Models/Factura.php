@@ -9,7 +9,7 @@ class Factura extends Model
 {
     use HasFactory;
 
-    protected $fillable=['idpoveedor','idusuario','numero','serie','total','descuento_nota','flete','condicion'];
+    protected $fillable=['idpoveedor','idusuario','numero','serie','total','total_parcial','descuento_nota','flete','condicion'];
 
     public function proveedor(){
         return $this->belongsTo('App\Models\Proveedor');
