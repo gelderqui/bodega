@@ -8,6 +8,7 @@ CREATE TABLE detalles (
   PRIMARY KEY (id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--Poner el campo id de la tabla factura en unsigned--
 ALTER TABLE detalles
 ADD CONSTRAINT detalle_factura_fk
 FOREIGN KEY (idfactura) REFERENCES facturas(id)

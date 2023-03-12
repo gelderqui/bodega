@@ -2395,6 +2395,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   props: ['ruta'],
@@ -2411,7 +2412,7 @@ __webpack_require__.r(__webpack_exports__);
         'to': 0
       },
       offset: 3,
-      criterio: '',
+      criterio: 'numero',
       buscar: '',
       listado: 0,
       // ver
@@ -4008,9 +4009,9 @@ var app = new vue__WEBPACK_IMPORTED_MODULE_4__["default"]({
   data: {
     menu: 0,
     //ruta: 'http://panaderia.atwebpages.com/public_html'
-    ruta: 'http://localhost:80/principal/7bodega/public' //ruta: 'http://192.168.0.105:80/sistemaprestamo/public'
-    //ruta: 'http://control.mayahonh.com/public_html'
-
+    //   ruta: 'http://localhost:80/principal/7bodega/public'
+    //ruta: 'http://192.168.0.105:80/sistemaprestamo/public'
+    ruta: 'https://bodega.panaderiashaddai.com/public'
   }
 });
 

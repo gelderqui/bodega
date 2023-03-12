@@ -17,6 +17,15 @@ Route::get('/', function () {
     return view('contenido.contenido');
 });
 
+Route::get('/clear-cache', function () {
+    echo Artisan::call('config:clear');
+    echo Artisan::call('config:cache');
+    echo Artisan::call('cache:clear');
+    echo Artisan::call('route:clear');
+    echo Artisan::call('view:clear');
+});
+
+
 Route::get('/producto', 'App\Http\Controllers\ProductoController@index');
 Route::post('/producto/registrar', 'App\Http\Controllers\ProductoController@store');
 Route::put('/producto/actualizar', 'App\Http\Controllers\ProductoController@update');

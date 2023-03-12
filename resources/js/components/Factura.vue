@@ -25,6 +25,7 @@
                         <i class="icon-plus"></i>&nbsp;Nuevo
                         </button>
                     </div>
+                    <!-- Vista principal -->
                     <template v-if="listado==0">
                         <div class="card-body">
                             <div class="form-group row">
@@ -343,7 +344,7 @@
                     'to' : 0,
                 },
                 offset : 3,
-                criterio : '',
+                criterio : 'numero',
                 buscar : '',
                 listado:0,
                 // ver

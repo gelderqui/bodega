@@ -19,9 +19,9 @@ const app = new Vue({
     data :{
         menu : 0,
         //ruta: 'http://panaderia.atwebpages.com/public_html'
-          ruta: 'http://localhost:80/principal/7bodega/public'
+        //   ruta: 'http://localhost:80/principal/7bodega/public'
          //ruta: 'http://192.168.0.105:80/sistemaprestamo/public'
-         //ruta: 'http://control.mayahonh.com/public_html'
+         ruta: 'https://bodega.panaderiashaddai.com/public'
     }
 });
 

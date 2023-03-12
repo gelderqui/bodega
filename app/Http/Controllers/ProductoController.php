@@ -14,6 +14,7 @@ class ProductoController extends Controller
 {
     public function index(Request $request)
     {
+        // dd('entra');
         $buscar = $request->buscar;
         $criterio = $request->criterio;
 
